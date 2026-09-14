@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top, #25140b 0%, #0d0d0d 42%, #050505 100%);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.perfil {
+    width: 100%;
+    max-width: 480px;
+    min-height: 100vh;
+    padding: 35px 22px 25px;
+    text-align: center;
+}
+
+/* TOPO */
+
+.perfil-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 145px;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ff6a00;
+    box-shadow: 0 0 30px rgba(255, 106, 0, 0.18);
+    margin-bottom: 18px;
+}
+
+.perfil-header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.profissao {
+    color: #ff7a00;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.descricao {
+    color: #aaa;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 14px;
+}
+
+/* LINKS */
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 32px;
+}
+
+.link-card {
+    width: 100%;
+    padding: 17px 20px;
+    background: #151515;
+    border: 1px solid #292929;
+    border-radius: 14px;
+
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    transition: 0.25s;
+}
+
+.link-card:hover {
+    background: #ff6a00;
+    border-color: #ff6a00;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 106, 0, 0.25);
+}
+
+/* SERVIÇOS */
+
+.servicos {
+    margin-top: 32px;
+    padding-top: 22px;
+    border-top: 1px solid #222;
+}
+
+.servicos p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* RODAPÉ */
+
+footer {
+    margin-top: 35px;
+}
+
+footer p {
+    color: #444;
+    font-size: 12px;
+}
+
+/* CELULAR */
+
+@media (max-width: 500px) {
+    .perfil {
+        padding-top: 28px;
+    }
+
+    .logo {
+        width: 125px;
+        height: 125px;
+    }
+
+    .perfil-header h1 {
+        font-size: 25px;
+    }
+
+    .link-card {
+        padding: 16px;
+        font-size: 15px;
+    }
+}
